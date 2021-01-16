@@ -1,16 +1,26 @@
 <html>
-    <head>
-    <script src="script.js"></script>
+    <head> 
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <div class="center">
+            <div class="left">
+            <div class="row"><span class="col">Amount</span><input class="col" type="text" id="principal"></div></br>
+            <div class="row">
+                <span class="col">Interest Rate</span>
+                <span class="col">
+                    <div class="row">
+                        <input class="col" type="range" min="0" max="100.0" value="50.0" step="0.1" id="rateslide"><span id="rate"></span>
+                    </div>
+                </span>
+            </div></br>
+            <div class="row"><span class="col">No. of Years</span><input type="number" id="years"></div></br>
+            <button onclick="compute()">Compute Interest</button></br></br>
+            <span class="row" id="result"></span></br>
+            </div>
+        </div>
+        <span id="copyright">&#169; Everyone Can Get Rich</span></br>
     </body>
+    <script src="script.js"></script>
 </html>

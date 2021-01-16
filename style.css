@@ -1,4 +1,53 @@
-body {background-color:tan;}
-h1{color:green;}
+html{
+	background-color: black;
+}
+body {
+	margin: 1em;
+	padding: 1em;
+	background-color:white;
+	width: 50%;
+	transform: translate(50%);
+	border-radius: 1em;
+}
 
+.center {
+	margin: auto;
+	width: 50%;
+	padding: 1em;
+	text-align: center;
+}
 
+.left{
+	text-align: left;
+	border: black 1em;
+}
+
+.col {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#copyright{
+	float: right;
+}
+
+h1{
+	color:gray;
+	text-align: center;
+}
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: blue; 
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: blue; 
+}
