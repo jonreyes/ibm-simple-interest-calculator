@@ -23,8 +23,7 @@ function compute()
     let endYear = new Date().getFullYear() + time;
     
     result.style.display = "block";
-    let resultvalue = amount*(1+rateslide.value/100)*(time)
-    resultvalue -= amount;
+    let resultvalue = amount*rateslide.value/100*time
     resultvalue = resultvalue.toFixed(2) 
     let resulttext = `If you deposit <mark>${amount}</mark>,</br>
     at an interest rate of <mark>${rateslide.value}%</mark>.</br>
